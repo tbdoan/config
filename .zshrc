@@ -78,7 +78,13 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='ls --color'
 alias c='clear'
+# fuck!
 alias fk='hist d -1 > /dev/null'
+alias FK='hist f -1 > /dev/null'
+# git add + commit
+alias gac='git add .; git commit -m'
+# git fetch + merge
+alias gfm='git fetch; git merge origin/main'
 
 # Shell integrations
 eval "$(fzf --zsh)"
@@ -116,4 +122,4 @@ export GOEXPERIMENT="loopvar"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig"
 
 # https://github.com/marlonrichert/zsh-hist
-source /Users/tbdoan/Documents/Personal/configs/zsh-hist/zsh-hist.plugin.zsh
+source ~/zplugins/zsh-hist/zsh-hist.plugin.zsh
